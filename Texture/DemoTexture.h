@@ -11,12 +11,12 @@
 
 class CDemoTexture : public CDx11Base
 {
-// Constructors
+    // Constructors
 public:
     CDemoTexture();
     virtual ~CDemoTexture();
 
-// Overrides
+    // Overrides
 public:
     virtual bool LoadContent();
     virtual void UnloadContent();
@@ -24,7 +24,7 @@ public:
     virtual void Update();
     virtual void Render();
 
-// Members
+    // Members
 protected:
     ID3D11VertexShader* m_pVS;
     ID3D11PixelShader* m_pPS;
@@ -32,6 +32,7 @@ protected:
     ID3D11Buffer* m_pVertexBuffer;
     //Terxture and Sampler
     ID3D11ShaderResourceView* m_ColorMap;
+    ID3D11ShaderResourceView* m_ColorMap1;
     ID3D11SamplerState* m_pSampler;
 };
 
